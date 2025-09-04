@@ -1,0 +1,286 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  background: #2c3e50;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background: #1abc9c;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* Hamburger menu (mobile) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #34495e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Content */
+.content {
+  padding: 40px;
+  text-align: center;
+}
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comillas Negras', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul.menu {
+    display: flex;
+    list-style: none;
+}
+
+nav ul.menu li {
+    margin-left: 30px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav ul.menu li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Scroll effect */
+nav.scrolled {
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Menu toggle for mobile */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Landing Section */
+.landing {
+    height: 100vh;
+    background: linear-gradient(rgba(30,60,114,0.7), rgba(42,82,152,0.7)), url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.landing-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.landing-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #ffcc00;
+    color: #1e3c72;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #ffd633;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 100px 50px;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1e3c72;
+    font-size: 36px;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    flex: 1 1 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    flex: 1 1 250px;
+    background: #1e3c72;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(90deg, #1e3c72, #2a5298);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    nav ul.menu.active {
+        display: flex;
+    }
+
+    nav ul.menu li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .landing-content h1 {
+        font-size: 32px;
+    }
+
+    .landing-content p {
+        font-size: 16px;
+    }
+}
